@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="page-header-logo" href=""><img src="./index.html"  width="140" height="70" alt="Логотип сайта городка Седона"></a>
+        <a class="page-header-logo" href="./index.html"><img src="./images/svg/logo.svg"  width="140" height="70" alt="Логотип сайта городка Седона"></a>
         <ul class="navigation-list">
           <li class="navigation-item"><a class="navigation-link navigation-link-current" href="./index.html">Главная</a></li>
           <li class="navigation-item"><a class="navigation-link" href="#">О Cедоне</a></li>
@@ -15,14 +16,14 @@
         </ul>
       </nav>
       <nav class="navigation_user">
-        <ul class="navigation_user_list">
+        <ul class="navigation-list">
           <li class="navigation_user_item">
-            <a class="navigation-link-user" href="#">
+            <a class="navigation-link-user search-icon" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation_user_item">
-            <a class="navigation-link-user" href="#">
+            <a class="navigation-link-user favourite-icon" href="#">
               <span class="visually-hidden">Избранные</span>
               <span class="favourite-number">12</span>
             </a>
@@ -47,25 +48,36 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
-          <li class="advantages-item pictures">
-            <div class="advantages-text">
+          <li class="advantages-item ">
+            <div class="advantages-text pictures">
               <h3 class="advantages-heading">Настоящий<br> городок</h3>
+              <!-- <img src="./images/svg/dash.svg" width="60" height="2" alt="Черточка"> -->
               <p class="description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img class="advantages-img" src="./images/streets.jpg" width="800" height="385" alt="Фото улицы города Седона">
           </li>
+
           <li class="advantages-item">
-            <h3 class="advantages-heading">Небольшая<br> площадь</h3>
-            <p class="description description-color">Все достопримечательности находятся очень близко</p>
+            <div class="advantages-text">
+              <h3 class="advantages-heading">Небольшая<br> площадь</h3>
+              <p class="description description-color">Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
+
           <li class="advantages-item light-blue">
-            <h3 class="advantages-heading">Красивая<br> дорога</h3>
-            <p class="description description-color">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="advantages-text">
+              <h3 class="advantages-heading">Красивая<br> дорога</h3>
+              <p class="description description-color">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
+
           <li class="advantages-item">
-            <h3 class="advantages-heading">Мало <br>туристов</h3>
-            <p class="description description-color">Большинство едет в Гранд Каньон и толпится там</p>
+            <div class="advantages-text">
+              <h3 class="advantages-heading">Мало <br>туристов</h3>
+              <p class="description description-color">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </li>
+
           <li class="advantages-item pictures">
             <img class = "advantages-img" src="./images/devil's_Bridge.jpg" width="800" height="385" alt="Фото вида природы">
             <div class="advantages-text">
@@ -73,6 +85,7 @@
               <p class="description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
+
         </ul>
       </section>
 
@@ -111,7 +124,7 @@
         <h2 class="header-block-two">Заинтересовались?</h2>
         <p class="description-block">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
-        <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
+        <a class="button-search" href="">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscribe sub-img">
@@ -126,21 +139,21 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer">
       <div class="social-container">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy" target="_blank"
               title="Группа вконтакте htmlacademy">
               <span class="visually-hidden">В Котакте</span>
-              <!-- <img src="./images/svg/social-vk.svg" alt="vk-icon"> -->
+              <img src="./images/svg/social-vk.svg" alt="vk-icon">
             </a>
           </li>
 
           <li class="social-item">
             <a class="social-link" href="https://t.me/htmlacademy " target="_blank" title="Телеграм канал htmlacademy">
               <span class="visually-hidden">Telegram</span>
-              <!-- <img src="./images/svg/social-telegram.svg" alt="tg-icon"> -->
+              <img src="./images/svg/social-telegram.svg" alt="tg-icon">
             </a>
           </li>
 
@@ -148,7 +161,7 @@
             <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
               title="Ютуб канал htmlacademy">
               <span class="visually-hidden">Youtube</span>
-              <!-- <img src="./images/svg/social-youtube.svg" alt="yt-icon"> -->
+              <img src="./images/svg/social-youtube.svg" alt="yt-icon">
             </a>
           </li>
         </ul>
@@ -159,7 +172,7 @@
 
         <div class="footer-contact-logo">
           <a class="page-footer-contact-logo-htmlacademy" href="https://htmlacademy.ru/">
-            <!-- <img class="contact-logo" src="./images/svg/htmlacademy.svg" width="115" height="33" alt="Логотип htmlacademy"> -->
+            <img class="contact-logo" src="./images/svg/htmlacademy.svg" width="115" height="33" alt="Логотип htmlacademy">
             <span class="visually-hidden">Переход на сайт HTML Academy</span>
           </a>
         </div>

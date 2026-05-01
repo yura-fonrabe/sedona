@@ -1,0 +1,363 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  width: 1200px;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/* Шапка */
+.page-header {
+  display: flex;
+  justify-content:space-between;
+  width: 1060px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px 16px;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.navigation_user {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-link-user {
+  text-decoration: none;
+  position: relative;
+  min-height: 64px;
+  width: 44px;
+  height: 64px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-icon {
+  background-image: url("../images/svg/search.svg");
+  display: block;
+}
+
+.favourite-icon {
+  background-image: url("../images/svg/heart.svg");
+  display: block;
+  margin-right: 20px;
+}
+
+.favourite-number {
+  position: absolute;
+  left: 20px;
+  top: 11px;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
+}
+
+.button-desired {
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: rgba(117, 97, 87, 1);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  width: 160px;
+  height: 36px;
+}
+/* Приветствие */
+.hero {
+  width: 1200px;
+  height: 485px;
+  margin: 0 auto;
+  background-color: #f3b3d3;
+  background-image: url(../images/svg/divider.svg) ,url(../images/Виднагоры.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain cover;
+}
+
+.logo {
+  padding: 51px 351px;
+}
+
+.advantages-block {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 192px;
+  gap: 25px;
+  padding: 69px 0;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.header-block {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 620px;
+  margin: 0 auto;
+}
+
+.description-block {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  text-transform: none;
+}
+
+/* Преимущества */
+.advantages-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  padding-inline-start: 0;
+}
+
+.advantages-item{
+  display: flex;
+}
+
+.advantages-text {
+  display: flex;
+  flex-direction: column;
+  padding: 102px 85px;
+  gap: 30px;
+  width: 230px;
+  height: 181px;
+}
+
+.advantages-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  width: 175px;
+  height: 56px;
+  padding: 0 28px;
+  text-align: center;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.pictures {
+  background-color: #82B3D3;
+  color: white;
+}
+
+.light-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* Приглашение */
+
+
+.header-block-two {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 64px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.description-block {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+/* Сервис */
+
+.service-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.service-item {
+  width: 400px;
+  height: 385px;
+  text-align: center;
+}
+
+.service-block {
+  padding: 80px 85px;
+}
+
+.service-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.interested {
+  text-align: center;
+  height: 214px;
+  margin-bottom: 96px;
+}
+
+.button-search {
+  text-decoration: none;
+  padding: 13px 50px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  background: rgba(117, 97, 87, 1);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Подписка */
+
+.subscribe {
+  height: 414px;
+  text-align: center;
+}
+
+.sub-img {
+  background-color: #82b3d3;
+  background-image: url("../images/subscribe.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.subscribe-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-form {
+  width: 684px;
+  display: flex;
+}
+
+.subscribe-field {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding: 12px 20px;
+  width: 452px;
+  max-height: 52px;
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.subscribe-button {
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  width: 232px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #82B3D3;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Футер */
+.footer {
+  width: 1200px;
+  padding: 40px 0 30px 0;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-contact-number {
+
+}
+
+.footer-number {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
