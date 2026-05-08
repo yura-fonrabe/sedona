@@ -1,0 +1,72 @@
+/* шрифты */
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/* Шапка */
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-link{
+  text-decoration: none;
+}
+
+.navigation-link-user {
+  text-decoration: none;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-icon {
+  background-image: url("../images/svg/search.svg");
+  display: block;
+}
+
+.favourite-icon {
+  background-image: url("../images/svg/heart.svg");
+  display: block;
+}
+
+.hero {
+  background-color: #688fa9;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.service-list {
+  list-style-type: none;
+}
+
+.product-list, .display-list {
+  list-style: none;
+}
